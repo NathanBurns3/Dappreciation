@@ -1,0 +1,5 @@
+I would use Matryoshka dolls as a model for the concept of nesting loops within
+each other. Each individual doll is its own loop (if, for, or while), and when
+you place a doll within another doll it's just like nesting a loop within another
+loop. You start at the inner loop (smallest doll) and make your way to the outer
+loop (the next biggest doll) after completing the inner loop each time.
