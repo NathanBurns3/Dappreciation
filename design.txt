@@ -1,10 +1,14 @@
-1. ask the model year
-2. ask the number of accidents
-3. ask if the car has premium options
-4. ask for the car's original MSRP
-5. calculate the car's baseline resale percentage (different tiers)
-6. calculate the car's wreck penalty percentage (different tiers)
-7. calculate the car's premium percentage (yes or no)
-8. calculate the car's final resale percentage ((baseline - wreck + premium) * MSRP)
-9. determine if the car is eligible (based ont he age and accident history) and print out the conclusion
+1. create a constant variable that stores the current year
+2. create 4 variables
+    2a. 1 calculates the cars year (uses the car model year method to ask and store the year)
+    2b. 1 holds the total amount of accidents (uses the car accidents method to ask and store the number of accidents)
+    2c. 1 holds a bool on if it has premium options or not (uses the car premium options method to ask and store if it has premium methods or not)
+    3d. 1 stores the msrp of the car ( uses the car msrp method to ask and store the cars msrp)
+3. set variable for the baseline Resale Percentage, the wreck penalty percentage, the premium percentage, the final resale percentage, and the resale price
+4. set up some if else statements that calculates the baseline percentage
+5. set up some if else statements that calculates the wreck percentage
+6. set up some if else statements that calculates the premium percentage
+7. calculate the final resale percentage and the resale price
+8. create 2 constant variables to store the eligible car year and accidents
+9. set up and if else statement that determines if the car is eligible or not
     9b. if it is eligible then print out the resale price

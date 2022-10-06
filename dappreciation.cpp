@@ -93,7 +93,7 @@ void print_ineligible_message() {
 */
 int main() {
   //variable to store the current year
-  int currentYear = 2022;
+  const int currentYear = 2022;
 
   //variables that are retrieving values from the given methods
   int carYear = currentYear - car_model_year();
@@ -154,7 +154,10 @@ int main() {
   resalePrice = msrp * finalResalePercentage;
 
   //determines if the car is eligible or not
-  if (carYear < 11 && accidents <= 3) {
+  const int eligibleYear = 10;
+  const int eligibleAccidents = 3;
+
+  if (carYear <= eligibleYear && accidents <= eligibleAccidents) {
     print_eligible_message(resalePrice);
   }
   else {
